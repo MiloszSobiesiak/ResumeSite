@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Patrick+Hand&display=swap');
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    
+  }
+
+  .options{
+    position: relative;
+    top:25%;
+
+  }
+
+  .sidebar a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
+  }
+   
+  .sidebar a.active {
+    background-color: #236AB9;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  .sidebar #links:hover:not(.active){
+    background-color: #f1f1f1;
+    color: white;
+  }
+  
+  .content {
+    background: linear-gradient(to top left, #236ab9 0%, #f7f2d4 100%);
+    margin-left: 200px;
+    padding: 1px 16px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+    }
+    .content{
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }

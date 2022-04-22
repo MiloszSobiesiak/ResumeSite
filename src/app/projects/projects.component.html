@@ -1,0 +1,19 @@
+<div class="main">
+    
+    <div class="skills">
+        <h1 >During my daily work I use:</h1>
+        <ng-container *ngFor="let skill of skills; let indx = index">
+        <p class="skill" [ngStyle]="{'animation-delay': indx*0.2 + 's'}" >{{skill}} </p>
+        </ng-container>
+    </div>
+    <div class="projects" >
+        <h1>Projects:</h1>
+        <ng-container *ngFor="let projects of projects;let indx = index">
+        <div class="project" [ngStyle]="{'animation-delay': indx+1 + 's'}">
+        <h2>{{projects.name}}</h2>
+        <a [href]="projects.link">{{projects.link}}</a>
+        <p>{{projects.desc}}</p>
+        </div>
+        </ng-container>
+    </div>
+</div>

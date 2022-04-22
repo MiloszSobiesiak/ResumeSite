@@ -1,0 +1,22 @@
+.main{
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+.posititon{
+    position: relative;
+    left: 3%;
+    margin: 120px;
+    margin-left: 0px;
+    width: 60%;
+    animation: slideinng 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+  
+  @keyframes slideinng {
+    0% { margin-left:300px;
+        opacity: 0; }
+    100% { margin-left:0px; 
+    opacity: 1;}
+}

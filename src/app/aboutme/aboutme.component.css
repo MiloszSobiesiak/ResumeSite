@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Patrick+Hand&display=swap');
+/* font-family: 'Courier New', Courier, monospace; */
+.main{
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    position: relative;
+}
+.about{
+    position: relative;
+    top:10%;
+}
+.name{
+    font-size: 5em;
+    margin: 0;
+    margin-left: 50px;
+    animation: slidein 1.5s ;
+    animation-iteration-count: 1; 
+    }
+.title{
+    font-size: 4rem;
+    margin: 0;
+    margin-left: 50px;
+    animation: slidein 1.5s;
+    animation-iteration-count: 1; 
+}
+.information{
+    position: relative;
+    width: 80%;
+    top:10%
+}
+.info{
+    font-size: 2rem;
+    margin-left: 50px;
+    animation: fadein 4s;
+    animation-iteration-count: 1; 
+}
+.contact p{
+    font-size: 2rem;
+    display: inline;
+}
+.contact{
+    display: inline;
+    position: relative;
+    top: 12%;
+    left: 50px;
+    animation: fadein 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+    0% { margin-left:300px;
+        opacity: 0; }
+    100% { margin-left:50px; }
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

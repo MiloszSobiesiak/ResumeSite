@@ -1,0 +1,10 @@
+<div class="main" >
+    <ng-container *ngFor="let pos of positions; let indx = index">
+        <div class="posititon" [ngStyle]="{'animation-delay': indx*0.5 + 's'}">
+            <h1>{{pos.name}}</h1>
+            <h3>{{pos.date}}</h3>
+            <h2>{{pos.title}}</h2>
+            <p>{{pos.desc}}</p>
+        </div>
+</ng-container>
+</div>
